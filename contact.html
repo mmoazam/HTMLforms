@@ -37,12 +37,20 @@
             </ul>
         </aside>
         <main id="main">
-           <h1>Contact Us</h1>
-           
+            <h1>Contact Us</h1>
+            <form action="contact.html" method="post" enctype="application/x-www-form-urlencoded">
+                Your Name: <input type="text" name="customerName" /><br />
+                Your Email: <input type="email" name="customerEmail" /><br />
+                Your Phone: <input type="tel" name="customerPhone" /><br />
+                <input type="hidden" name="source" value="contactForm" />
+                Your Feedback:<br /><textarea name="feedbackText" rows="5" cols="50"></textarea><br />
+                Severity: <input type="number" name="severity" /><br />
+                <input type="submit" value="SendContact" />
         </main>
 
         <footer>
-            <p>Our address is <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
+            <p>Our address is
+            <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
             </p>
             <p><small>&copy; 2020 Bethany's Pie Shop - All rights reserved</small></p>
             <p>Contact us via <a href="mailto:info@bethanyspieshop.com">email</a></p>
