@@ -61,14 +61,15 @@ footer {
 }
 
 .pie-header {
-    display:flex;
+    display: flex;
     flex-direction: row;
     font-weight: bold;
     background-color: bisque;
     margin-bottom: 10px;
 }
+
 .pie-list {
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     flex-basis: auto;
@@ -77,31 +78,55 @@ footer {
 }
 
 .pie-item {
-    display:flex;
+    display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
 }
 
 .text {
-    width:140px;
-    padding-right:10px;
+    width: 140px;
+    padding-right: 10px;
 }
 
 .pie-title {
-    width:250px;
-    padding-right:10px;
+    width: 250px;
+    padding-right: 10px;
 }
 
 .pie-description {
-    width:300px;
-    padding-right:10px;
+    width: 300px;
+    padding-right: 10px;
 }
+
 .num {
-    width:90px;
-    padding-right:10px;
+    width: 90px;
+    padding-right: 10px;
 }
 
 .pie-image {
-    width:180px;
-    padding-right:10px;
+    width: 180px;
+    padding-right: 10px;
+}
+
+fieldset {
+    border: 1px solid #a593c2;
+    border-width: 3px;
+    border-style: solid;
+}
+
+fieldset>legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #a593c2;
+    padding: 5px;
+}
+
+p>label {
+    display: block;
+}
+
+input[type=email],
+input[type=tel],
+textarea {
+    border-radius: 7px;
 }
